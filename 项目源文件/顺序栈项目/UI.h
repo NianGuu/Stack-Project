@@ -1,6 +1,6 @@
 ﻿#include "entity.h"
-#include "shop.h"
 #include "fight.h"
+#include "shop.h"
 
 Player InitPlayer(char name[nameLength]);
 

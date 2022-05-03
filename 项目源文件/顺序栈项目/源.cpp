@@ -20,7 +20,7 @@ int main() {
 /*初始化玩家*/
 Player InitPlayer(char name[nameLength]) {
 	Player player;
-	player.diamond = 0;
+	player.diamond = 200;
 	strcpy_s(player.name, name);
 	InitHero(&player.ownHero);
 	InitHero(&player.unHero);

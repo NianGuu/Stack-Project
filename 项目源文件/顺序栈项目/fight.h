@@ -165,16 +165,19 @@ int Fight(Player player, int level) {
 }
 /*操作列表*/
 void Menu(Player player, char menu) {
+	for (int i = 0;i < 9;i++) {
+		printf("\33[36m\33[%d;%dH                              \33[0m", 32 + 2 * (i / 3), 12 + 30 * (i % 3));
+	}
 	if (menu == 'a') {
 		printf("\33[36m\33[%d;%dH你的英雄", 30, 12);
 		for (int i = 0;i < player.ownHero.length;i++) {
-			printf("\33[%d;%dH|*  %d.%-10s  金币：%d  *|", 32 + 2 * (i / 3), 12 + 30 * (i % 3), i + 1, player.ownHero.hero[i].name, player.unHero.hero[i].gold);
+			printf("\33[%d;%dH|*  %d.%-10s  金币：%d  *|", 32 + 2 * (i / 3), 12 + 30 * (i % 3), i + 1, player.ownHero.hero[i].name, player.ownHero.hero[i].gold);
 		}
 	}
 	else if (menu == 'b') {
 		printf("\33[36m\33[%d;%dH你的小兵", 30, 12);
 		for (int i = 0;i < player.ownDogface.length;i++) {
-			printf("\33[36m\33[%d;%dH|*  %d.%-10s  金币：%d  *|\33[0m", 32 + 2 * (i / 3), 12 + 30 * (i % 3), i + 1, player.ownDogface.dogface[i].name, player.unDogface.dogface[i].attribute.gold);
+			printf("\33[36m\33[%d;%dH|*  %d.%-10s  金币：%d  *|\33[0m", 32 + 2 * (i / 3), 12 + 30 * (i % 3), i + 1, player.ownDogface.dogface[i].name, player.ownDogface.dogface[i].attribute.gold);
 		}
 	}
 }

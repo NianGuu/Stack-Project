@@ -32,9 +32,6 @@
     <ClInclude Include="fight.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="shop.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="seqlistHero.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -45,6 +42,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="seqlistDogface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shop.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
